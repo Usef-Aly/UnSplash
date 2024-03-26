@@ -1,0 +1,202 @@
+/*^ =========================> Google Font  */
+@import url('https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&display=swap');
+/*^ =========================> Global */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background-color: #F7F7F7;
+}
+body{
+    
+    font-family: "Poppins", sans-serif;
+
+}
+.container {
+    width: 95%;
+    margin-inline: auto;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+/*^ =========================> Header  */
+h1 {
+    color: #1e3a45;
+    font-size: 50px;
+    text-align: center;
+    margin: 45px 0 10px 0 ;
+    text-shadow: 7px  2px 7px rgba(0, 0, 0, 0.3);
+}
+.ancor{
+    color: #1e3a45;
+    text-decoration: none;
+    font-family: "Oregano", cursive;
+}
+h5{
+    font-size: 25px;
+    font-weight:  300 ;
+    text-align: center;
+    color: gray;
+    margin: 10px 0 50px 0 ;
+}
+h2{
+    max-width: 90%;
+    font-size: 30px;
+    font-weight:  300 ;
+    text-align: center;
+    font-weight: bold;
+    color: gray;
+    margin: 10px 0 50px 0 ;
+    margin: auto;
+}
+/*^ =========================> Form */
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+#search-input {
+    width: 60%;
+    padding: 15px 15px;
+    border: none;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    border-top-left-radius: 5px ;
+    border-bottom-left-radius: 5px ;
+    font-size: 15px;
+    color: black;
+}
+input[type=text]:focus {
+    outline: none;
+  }
+input[type=text]:focus::placeholder {
+    opacity: 40%;
+  }
+#search-btn {
+    padding: 15px 20px;
+    background-color: #1e3a45;
+    color: gray;
+    border: none;
+    font-size: 18px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    border-top-right-radius: 5px ;
+    border-bottom-right-radius: 5px ;
+    cursor: pointer;
+}
+/*^ =========================> Search Results  */
+.search-results{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.search-result {
+    margin-bottom: 60px;
+    width: 24%;
+    height: 380px;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
+}
+.search-result img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+}
+.search-result:hover img {
+    scale: 1.003;
+    opacity: 95%;
+}
+.search-result:hover a {
+    opacity: 95%;
+    
+}
+.search-result a {
+    font-size: 19px;
+    text-decoration: none;
+    color: #1e3a45;
+    display: block;
+    padding-block: 7px;
+    text-align: center;
+    text-transform: capitalize;
+    max-width: 95%;
+    background-color: white;
+    font-weight: bold;
+    opacity: 90%;
+}
+/*^ =========================>  Load More Btn  */
+#show-btn {
+    width: 95%;
+    border: 1px solid rgb(128, 128, 128);
+    padding: 23px;
+    margin: auto;
+    font-size: 16px;
+    color: rgb(128, 128, 128);
+    border-radius: 3px; 
+    margin-bottom: 70px;
+    cursor: pointer;
+    display: none;
+}
+#show-btn:hover {
+    border: 1px solid rgba(0, 0, 0, 0.852);
+    color: rgba(0, 0, 0, 0.852);
+}
+/*^ =========================> Footer  */
+Footer {
+    width: 100%;
+    background-color: #1e3a45;
+    padding-block: 5px;
+    font-family: serif;
+    box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    bottom: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+}
+footer p {
+color: aliceblue;
+width: fit-content;
+margin-left: 10%;
+background-color: transparent;
+font-family: "Oregano", cursive;
+}
+footer a {
+text-decoration: none;
+color: aliceblue;
+background-color: transparent;
+font-family: "Oregano", cursive;
+}
+/*^ =========================> Media Query  */
+@media (min-width: 888px) and (max-width: 1200px){
+    .search-result{
+        width: 30%;
+    }
+}
+@media  (min-width:700px) and  (max-width:888px){
+    .search-result{
+        width: 45%;
+    }
+}
+@media  (min-width:550px) and  (max-width:700px){
+    .search-result{
+        width: 77%;
+    }
+}
+@media  (min-width:480px) and  (max-width:550px){
+    .search-result{
+        width: 85%;
+    }
+}
+@media (min-width: 1px) and (max-width: 480px) {
+    .search-result{
+        width: 90%;
+    }
+}
